@@ -1,0 +1,52 @@
+
+*{
+  color: #000;
+  font-family: 'Tektur';
+
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+.hid{
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(2px);
+  transform: translateX(-100%);
+}
+
+/* @media(prefers-reduced-motion){
+  .hid{
+    transition: none;
+  }
+} */
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.lgg:nth-child(2){transition-delay: 200ms;}
+.lgg:nth-child(3){transition-delay: 300ms;}
+.lgg:nth-child(4){transition-delay: 400ms;}
+.lgg:nth-child(5){transition-delay: 500ms;}
+.lgg:nth-child(6){transition-delay: 600ms;}
+.lgg:nth-child(7){transition-delay: 700ms;}
+
+
+/* BG HOVER */
+.bg-grin{
+  background: #32f520;
+}
+
+.btn-cnt:hover  .bg-grin {
+  background: aliceblue !important;
+}
