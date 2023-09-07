@@ -11,6 +11,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Combo&family=Fruktur&family=Joan&family=Poppins:wght@200;300&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@400;500&family=Tektur:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -106,8 +109,101 @@
       </ul>
     </div>
 
-    <section class="hid lgg px-2 grid grid-cols-1 md:grid-cols-3 md:grid-cols-3  gap-x-10 gap-y-10 md:w-[92%] mx-auto mt-10">
-      <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden ">
+    <section class="hid lgg px-2 grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10 md:w-[92%] mx-auto mt-10">
+      <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden " id="demo1">
+        <div class="">
+          <div class="">
+            <img class="h-48 w-full object-cover " src="images/microblog-Desktop.PNG"
+              alt="Modern building architecture">
+          </div>
+          <div class="p-4">
+            <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Micro-Blog App</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Image, text and like functionality blog app</a>
+            <p class="text-xs mt-2 text-slate-500">React, NodeJS, MongoDB, Express, Css, Tailwind </p>
+            <div class="flex mt-5 justify-between">
+              <button class="bg-black text-white rounded px-2 py1"><a href="#">github</a> </button>
+              <a href="https://microblog-eta.vercel.app/" target="_blank"><img src="images/link-icon.png" alt="" srcset=""></a>
+              <button class="demo-btn bg-[#32f520] text-white rounded px-4 py-2" id="demo-btn"><a href="#">Demo &#x279C;</a> </button>
+            </div>
+          </div>
+        </div>
+        <div class="popup-1 hidden fixed top-[50%] left-[50%] w-[100%] h-[100%] flex justify-center align-middle translate-x-[-50%] translate-y-[-50%] p-6 md:p-12 bg-gray-900 bg-opacity-80">
+            <video class="relative w-[100%] md:max-w-[1200px] h-[300px] md:h-[600px] pt-5 md:pt-10 md:pr-5" src="images/demo/BlogApp.mp4" controls></video>
+            <i class="close-btn text-white fa-sharp fa-solid fa-circle-xmark fa-x md:fa-2x" id="close-btn"></i>
+        </div>
+      </div>
+
+      <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden " id="demo2">
+        <div class="">
+          <div class="">
+            <img class="h-48 w-full object-cover " src="images/Ecommerce-web.PNG"
+              alt="Modern building architecture">
+          </div>
+          <div class="p-4">
+            <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Micro-Blog App</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Image, text and like functionality blog app</a>
+            <p class="text-xs mt-2 text-slate-500">React, NodeJS, MongoDB, Express, Css, Bootstrap </p>
+            <div class="flex mt-5 justify-between">
+              <button class="bg-black text-white rounded px-2 py1"><a href="#">github</a> </button>
+              <button class=" bg-[#32f520] text-white rounded px-4 py-2"><a href="https://e-commerce2-cyan.vercel.app">Website &#x279C;</a> </button>
+            </div>
+          </div>
+        </div>
+        <div class="popup-2 hidden fixed top-[50%] left-[50%] w-[100%] h-[100%] flex justify-center align-middle translate-x-[-50%] translate-y-[-50%] p-6 md:p-12 bg-gray-900 bg-opacity-80">
+            <video class="relative w-[100%] md:max-w-[1200px] h-[300px] md:h-[600px] pt-5 md:pt-10 md:pr-5" src="" controls
+            type="video/mp4"
+            ></video>
+            <i class="close-btn text-white fa-sharp fa-solid fa-circle-xmark fa-x md:fa-2x" id="close-btn2"></i>
+        </div>
+      </div>
+            <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden " id="demo2">
+              <div class="">
+                <div class="">
+                  <img class="h-48 w-full object-cover " src="images/Trafagal-health.PNG" alt="Modern building architecture">
+                </div>
+                <div class="p-4">
+                  <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Trafagal health service</div>
+                  <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Landing page for a
+                    Health company</a>
+                  <p class="text-xs mt-2 text-slate-500">HTML, Css, JavaScript</p>
+                  <div class="flex mt-5 justify-between">
+                    <button class="bg-black text-white rounded px-2 py1"><a href="#">github</a> </button>
+                    <button class=" bg-[#32f520] text-white rounded px-4 py-2"><a
+                        href="https://trafagal-health-care.vercel.app">Website &#x279C;</a> </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="popup-2 hidden fixed top-[50%] left-[50%] w-[100%] h-[100%] flex justify-center align-middle translate-x-[-50%] translate-y-[-50%] p-6 md:p-12 bg-gray-900 bg-opacity-80">
+                <video class="relative w-[100%] md:max-w-[1200px] h-[300px] md:h-[600px] pt-5 md:pt-10 md:pr-5" src="" controls
+                  type="video/mp4"></video>
+                <i class="close-btn text-white fa-sharp fa-solid fa-circle-xmark fa-x md:fa-2x" id="close-btn2"></i>
+              </div>
+            </div>
+      <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden " id="demo2">
+        <div class="">
+          <div class="">
+            <img class="h-48 w-full object-cover " src="images/newsflash-website.PNG"
+              alt="Modern building architecture">
+          </div>
+          <div class="p-4">
+            <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">News Flash</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Landing Page of a new website</a>
+            <p class="text-xs mt-2 text-slate-500">React, NodeJS, MongoDB, Express, Css, Bootstrap </p>
+            <div class="flex mt-5 justify-between">
+              <button class="bg-black text-white rounded px-2 py1"><a href="#">github</a> </button>
+              <button class=" bg-[#32f520] text-white rounded px-4 py-2"><a href="https://e-commerce2-cyan.vercel.app">Website &#x279C;</a> </button>
+            </div>
+          </div>
+        </div>
+        <div class="popup-2 hidden fixed top-[50%] left-[50%] w-[100%] h-[100%] flex justify-center align-middle translate-x-[-50%] translate-y-[-50%] p-6 md:p-12 bg-gray-900 bg-opacity-80">
+            <video class="relative w-[100%] md:max-w-[1200px] h-[300px] md:h-[600px] pt-5 md:pt-10 md:pr-5" src="" controls
+            type="video/mp4"
+            ></video>
+            <i class="close-btn text-white fa-sharp fa-solid fa-circle-xmark fa-x md:fa-2x" id="close-btn2"></i>
+        </div>
+      </div>
+      <!-- <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden ">
         <div class="">
           <div class="">
             <img class="h-48 w-full object-cover " src="images/image1.jpg"
@@ -144,26 +240,7 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden ">
-        <div class="">
-          <div class="">
-            <img class="h-48 w-full object-cover " src="images/image1.jpg"
-              alt="Modern building architecture">
-          </div>
-          <div class="p-4">
-            <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Company retreats</div>
-            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible
-              accommodation for your team</a>
-            <p class="text-xs mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some
-              sunshine? We have a list of places to do just that.</p>
-            <div class="flex mt-5 justify-between">
-              <button class="bg-black text-white rounded px-2 py1"><a href="#">github</a> </button>
-              <button class="bg-[#32f520] text-white rounded px-4 py-2"><a href="#">Website &#x279C;</a> </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div> -->
     </section>
   </div>
 
@@ -189,19 +266,69 @@
       
 
       // Scroll animation
-      const observer = new IntersectionObserver((entries)=>{
-        entries.forEach((entry)=>{
-          console.log(entry);
-          if(entry.isIntersecting){
-            entry.target.classList.add('show')
-          }else{
-            entry.target.classList.remove('show')
-          }
-        })
-      })
+      // const observer = new IntersectionObserver((entries)=>{21
+      //   entries.forEach((entry)=>{
+      //     console.log(entry);
+      //     if(entry.isIntersecting){
+      //       entry.target.classList.add('show')
+      //     }else{
+      //       entry.target.classList.remove('show')
+      //     }
+      //   })
+      // })
 
-      const hiddenElement = document.querySelectorAll('.hid')
-      hiddenElement.forEach((el)=> observer.observe(el))
+      // const hiddenElement = document.querySelectorAll('.hid')
+      // hiddenElement.forEach((el)=> observer.observe(el))
+
+
+        // const demobtn = document.getElementById("demo-btn")
+        // const popup = document.getElementsByClassName(".popup-1")
+        // const closepop = document.getElementsByClassName(".close-btn")
+
+
+        // demobtn.addEventListener("click", ()=>{
+        //   popup.classList.remove('hidden')
+        //   console.log("open");
+        // })
+        // closepop.addEventListener("click", ()=>{
+        //   popup.classList.add('hidden')
+        //   console.log("close");
+        // })
+
+      // const demoButtons = document.querySelectorAll('.demo-btn');
+      //   const closeIcons = document.querySelectorAll('.close-btn');
+
+      // // Add click event listeners to each demo button
+      //   demoButtons.forEach((button, index) => {
+      //     button.addEventListener('click', () => {
+      //       openDemo(index + 1); // Index starts from 0, so we add 1 to match your demo IDs
+      //     });
+      //   });
+
+      //   closeIcons.forEach((icon) => {
+      //     icon.addEventListener('click', () => {
+      //       closeDemo();
+      //     });
+      // });
+
+      
+      //   function openDemo(id) {
+      //     const demoElement = document.getElementById(`demo${id}`);
+      //     const video = demoElement.querySelector('video');
+      //     demoElement.classList.remove('hidden'); // Apply a CSS class to show the pop-up
+      //     video.play(); // Play the video
+      //   }
+
+      //   function closeDemo() {
+      //       const demoElements = document.querySelectorAll('.profile');
+      //       const videos = document.querySelectorAll('.profile video');
+      //       demoElements.forEach((demoElement) => {
+      //         demoElement.classList.add('hidden'); // Remove the CSS class to hide the pop-up
+      //       });
+      //       videos.forEach((video) => {
+      //         video.pause(); // Pause all videos
+      //       });
+      //     }
   </script>
   <script src="Index.js"></script>
 </body>
