@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
  <meta charset="UTF-8">
@@ -12,7 +12,7 @@
 
 </head>
 <body> 
- <!-- <progress max="100" value="50"></progress> -->
+
  <div class="bg-black h-screen">
   <div class="bg-[#32f520]">
    <div class=" flex flex-col mx-auto justify-center place-items-center min-h-[100vh] gap-4 bg-repeat-space text-black" style="background-image: url()">
@@ -73,4 +73,402 @@
           } 
  </script>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Style.css">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Combo&family=Fruktur&family=Joan&family=Poppins:wght@200;300&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@400;500&family=Tektur:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+
+<body>
+  <!-- <progress max="100" value="0"></progress> -->
+  <div class="container min-h-screen bg-white  max-w-full ">
+    <div class="bg-black">
+      <nav class="flex justify-between items-center w-[92%] mx-auto ">
+        <div>
+          <img src="./images/logo.png" alt="" class="w-16 cursor-pointer bg-white">
+        </div>
+
+        <div
+          class="nav-links pb-12 md:pb-0 z-10 md:static absolute bg-[#32f520]   md:bg-inherit md:min-h-fit min-h-[60vh] left-0  duration-400 top-[-100%] md:w-auto w-full flex items-center px-5">
+          <ul class="flex md:flex-row flex-col items-center text-center md:items-center md:gap-[4vw] gap-8">
+            <li class="list-none inline-block px-5 text-center"><a
+                class="no-underline text-white hover:text-gray-500 px-2 text-2xl md:text-base" href="#">Home</a></li>
+            <li class="list-none inline-block px-5"><a
+                class="no-underline text-white px-2 hover:text-gray-500 text-2xl md:text-base" href="#">About</a></li>
+            <li class="list-none inline-block px-5"><a
+                class="no-underline text-white px-2 hover:text-gray-500 text-2xl md:text-base"
+                href="#works">Projects</a></li>
+            <li class="list-none inline-block px-5"><a
+                class="no-underline text-white px-2 hover:text-gray-500 text-2xl md:text-base"
+                href="https://drive.google.com/file/d/1Srt5rMBlxSNTtrPvDHorxpuCSLwbbUNR/view?usp=drivesdk"
+                target="_blank">Contact</a></li>
+
+          </ul>
+        </div>
+        <div class="flex items-center md:hidden">
+          <ion-icon name="menu" class="text-3xl cursor-pointer text-white" onclick="onToggleMenu(this)"></ion-icon>
+        </div>
+      </nav>
+    </div>
+    <!-- md:grid md:grid-cols-2 -->
+    <div class="hid container max-w-full w-auto bg-[#000]">
+      <div class="profile py-4  justify-between justify-items-center md:w-[75%] md:px-2 mx-auto">
+        <div class="lgg text-black mt-auto mb-auto max-w-6xl justify-center px-4">
+          <h1
+            class="text-[#ffffff] text-4xl md:text-6xl font-light leading-normal lg:text-8xl hover:underline transition-300 cursor-pointer animate__flash animate__animated animate__delay-10s animate__repeat-1">
+            I am Damilola <span class="text-[#ffffff] font-extrabold">Software Developer</span> </h1>
+          <p class=" md:text-lg hover:underline transition-300 cursor-pointer animate__backInRight text-slate-300">Check
+            out my work and immense yourself in a world of code-driven creations. As a software developer, I've brought
+            ideas to life in a form of web applications, mobile apps, and more. Explore my works, and let's turn your
+            vision into reality.</p>
+
+          <div class="flex justify-start gap-6 my-5">
+            <button class="bg-black text-white hover:text-black hover:bg-white rounded px-2 py-1 transition-500"><a
+                href="#works">My Works</a> </button>
+            <button class="bg-black text-white hover:text-black hover:bg-white rounded px-2 py-1"><a
+                href="https://drive.google.com/file/d/1Srt5rMBlxSNTtrPvDHorxpuCSLwbbUNR/view?usp=drivesdk"
+                target="_blank">Contact Me</a></button>
+          </div>
+        </div>
+
+        <!-- <div class="mx-auto my-auto">
+          <img src="/images/websiteHero.jpg" alt="" class="profile w-[100%] h-96 md:w-8/12  md:h-1/5 mx-auto">
+        </div> -->
+      </div>
+
+    </div>
+
+    <!-- stack -->
+    <div class="hid profile mt-14 px-2 animate__backInLeft animate__animated">
+      <h2 class="text-center bg-black text-white w-fit mx-auto rounded p-2 mb-5">MY STACK</h2>
+      <ul class="hid lgg grid grid-cols-2 md:grid-cols-3  gap-y-6 gap-x-5 lg:gap-x-30 text-center md:w-[70%] mx-auto">
+        <li class="flex align-middle justify-center items-center bg-orange-200 rounded-[10px] py-5">
+          <img src="images/icons/html.svg" alt="" class="w-7">
+          <p class="text-sm text-orange-700">HTML</p>
+        </li>
+
+        <li class="flex align-middle justify-center items-center bg-blue-300 rounded-[10px] py-5">
+          <img src="images/icons/css.svg" alt="" class="w-7">
+          <p class="text-sm text-blue-600">CSS</p>
+        </li>
+        <li class="flex align-middle justify-center items-center  bg-purple-300 rounded-[5px] py-5">
+          <img src="images/icons/bootstrap.svg" alt="" class="w-7">
+          <p class="text-sm text-purple-800">BOOTSTRAP</p>
+        </li>
+        <li class="flex align-middle justify-center items-center  bg-blue-200 rounded-[10px] py-5">
+          <img src="images/icons/tailwind-css.svg" alt="" class="w-7">
+          <p class="text-sm text-blue-500">TAILWIND</p>
+        </li>
+        <li class="flex align-middle justify-center items-center  bg-yellow-200 rounded-[10px] py-5">
+          <img src="images/icons/javascript.svg" alt="" class="w-7">
+          <p class="text-sm  text-yellow-500">JAVASCRIPT</p>
+        </li>
+        <li class="flex align-middle justify-center items-center bg-blue-50 rounded-[10px] py-5">
+          <img src="images/icons/react.svg" alt="" class="w-7">
+          <p class="text-sm  text-blue-500">REACT</p>
+        </li>
+        <li class="flex align-middle justify-center items-center bg-green-200 rounded-[10px] py-5">
+          <img src="images/icons/node-js.svg" alt="" class="w-7">
+          <p class="text-sm text-green-500">NODEJS</p>
+        </li>
+        <li class="flex align-middle justify-center items-center bg-yellow-400 rounded-[10px] py-5">
+          <img src="images/icons/mongodb.svg" alt="" class="w-7">
+          <p class="text-sm text-yellow-950">MONGODB</p>
+        </li>
+      </ul>
+    </div>
+
+    <section class="hid lgg px-2 grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-10 md:w-[92%] mx-auto mt-10" id="works">
+      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden ">
+        <div class="">
+          <img class="h-48 w-full object-cover " src="images/Dashboard.PNG" alt="Modern building architecture">
+        </div>
+        <div class="p-4">
+          <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Sports Dashboard</div>
+          <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Live score and
+            match
+            analysis dashboard</a>
+          <p class="text-xs mt-2 text-slate-500">React, HTML, CSS, Tailwind </p>
+          <div class="flex mt-5 justify-between">
+            <button class="bg-black text-white rounded px-2 py1"><a
+                href="https://github.com/Dammymure/SportDashboard">github</a> </button>
+            <button class=" bg-[#32f520] text-white rounded px-4 py-2"><a
+                href="https://sport-dashboard-kohl.vercel.app/">Live
+                &#x279C;</a> </button>
+          </div>
+        </div>
+      </div>
+      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden ">
+        <div class="">
+          <img class="h-48 w-full object-cover " src="images/adminDashboardImage.PNG"
+            alt="Modern building architecture">
+        </div>
+        <div class="p-4">
+          <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Admin Dashboard</div>
+          <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">User Dashboard
+            with
+            Charts and Graphs</a>
+          <p class="text-xs mt-2 text-slate-500">HTML, CSS, Tailwind, React, Syncfusion</p>
+          <div class="flex mt-5 justify-between">
+            <button class="bg-black text-white rounded px-2 py1"><a
+                href="https://github.com/Dammymure/Admin-Dashboard">github</a> </button>
+            <button class=" bg-[#32f520] text-white rounded px-4 py-2"><a
+                href="https://admin-dashboard-sandy-seven.vercel.app/">Live &#x279C;</a> </button>
+          </div>
+        </div>
+      </div>
+      <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden " id="demo1">
+        <div class="">
+          <div class="">
+            <img class="h-48 w-full object-cover " src="images/socialAppShot.PNG" alt="Social App">
+          </div>
+          <div class="p-4">
+            <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Social App</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Picture,
+              description, like, add friends functionality social app</a>
+            <p class="text-xs mt-2 text-slate-500">React, NodeJS, MongoDB, Express, Css, Material UI, Redux </p>
+            <div class="flex mt-5 justify-between">
+              <button class="bg-black text-white rounded px-2 py1"><a
+                  href="https://github.com/Dammymure/SocialApp">github</a> </button>
+              <button class=" bg-[#32f520] text-white rounded px-4 py-2"><a
+                  href="https://social-app-lake-three.vercel.app/">Live
+                  &#x279C;</a> </button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="popup-1 hidden fixed top-[50%] left-[50%] w-[100%] h-[100%] flex justify-center align-middle translate-x-[-50%] translate-y-[-50%] p-6 md:p-12 bg-gray-900 bg-opacity-80">
+            <video class="relative w-[100%] md:max-w-[1200px] h-[300px] md:h-[600px] pt-5 md:pt-10 md:pr-5" src="images/demo/BlogApp.mp4" controls></video>
+            <i class="close-btn text-white fa-sharp fa-solid fa-circle-xmark fa-x md:fa-2x" id="close-btn"></i>
+        </div> -->
+      </div>
+      <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden " id="demo1">
+        <div class="">
+          <div class="">
+            <img class="h-48 w-full object-cover " src="images/microblog-Desktop.PNG"
+              alt="Modern building architecture">
+          </div>
+          <div class="p-4">
+            <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Micro-Blog App</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Image, text and
+              like functionality blog app</a>
+            <p class="text-xs mt-2 text-slate-500">React, NodeJS, MongoDB, Express, Css, Tailwind </p>
+            <div class="flex mt-5 justify-between">
+              <button class="bg-black text-white rounded px-2 py1"><a
+                  href="https://github.com/Dammymure/Micro-blog">github</a> </button>
+              <a href="https://microblog-eta.vercel.app/" target="_blank"><img src="images/link-icon.png" alt=""
+                  srcset=""></a>
+              <button class="demo-btn bg-[#32f520] text-white rounded px-4 py-2" id="demo-btn"><a href="#">Demo
+                  &#x279C;</a> </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="popup-1 hidden fixed top-[50%] left-[50%] w-[100%] h-[100%] flex justify-center align-middle translate-x-[-50%] translate-y-[-50%] p-6 md:p-12 bg-gray-900 bg-opacity-80">
+          <video class="relative w-[100%] md:max-w-[1200px] h-[300px] md:h-[600px] pt-5 md:pt-10 md:pr-5"
+            src="images/demo/BlogApp.mp4" controls></video>
+          <i class="close-btn text-white fa-sharp fa-solid fa-circle-xmark fa-x md:fa-2x" id="close-btn"></i>
+        </div>
+      </div>
+
+      <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden " id="demo2">
+        <div class="">
+          <div class="">
+            <img class="h-48 w-full object-cover " src="images/Ecommerce-web.PNG" alt="Modern building architecture">
+          </div>
+          <div class="p-4">
+            <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">E-commerce App</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">E-comerce
+              Application with seller and buyer endpoints</a>
+            <p class="text-xs mt-2 text-slate-500">React, NodeJS, MongoDB, Express, Css, Bootstrap </p>
+            <div class="flex mt-5 justify-between">
+              <button class="bg-black text-white rounded px-2 py1"><a
+                  href="https://github.com/Dammymure/E-commerce2">github</a> </button>
+              <button class=" bg-[#32f520] text-white rounded px-4 py-2"><a
+                  href="https://e-commerce2-cyan.vercel.app">Live &#x279C;</a> </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="popup-2 hidden fixed top-[50%] left-[50%] w-[100%] h-[100%] flex justify-center align-middle translate-x-[-50%] translate-y-[-50%] p-6 md:p-12 bg-gray-900 bg-opacity-80">
+          <video class="relative w-[100%] md:max-w-[1200px] h-[300px] md:h-[600px] pt-5 md:pt-10 md:pr-5" src=""
+            controls type="video/mp4"></video>
+          <i class="close-btn text-white fa-sharp fa-solid fa-circle-xmark fa-x md:fa-2x" id="close-btn2"></i>
+        </div>
+      </div>
+      <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden " id="demo2">
+        <div class="">
+          <div class="">
+            <img class="h-48 w-full object-cover " src="images/Trafagal-health.PNG" alt="Modern building architecture">
+          </div>
+          <div class="p-4">
+            <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Trafagal health service</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Landing page for
+              a
+              Health company</a>
+            <p class="text-xs mt-2 text-slate-500">HTML, Css, JavaScript</p>
+            <div class="flex mt-5 justify-between">
+              <button class="bg-black text-white rounded px-2 py1"><a
+                  href="https://github.com/Dammymure/Trafagal-health-care">github</a> </button>
+              <button class=" bg-[#32f520] text-white rounded px-4 py-2"><a
+                  href="https://trafagal-health-care.vercel.app">Live &#x279C;</a> </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="popup-2 hidden fixed top-[50%] left-[50%] w-[100%] h-[100%] flex justify-center align-middle translate-x-[-50%] translate-y-[-50%] p-6 md:p-12 bg-gray-900 bg-opacity-80">
+          <video class="relative w-[100%] md:max-w-[1200px] h-[300px] md:h-[600px] pt-5 md:pt-10 md:pr-5" src=""
+            controls type="video/mp4"></video>
+          <i class="close-btn text-white fa-sharp fa-solid fa-circle-xmark fa-x md:fa-2x" id="close-btn2"></i>
+        </div>
+      </div>
+      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden " id="demo2">
+        <div class="">
+          <div class="">
+            <img class="h-48 w-full object-cover " src="images/newsflash-website.PNG"
+              alt="Modern building architecture">
+          </div>
+          <div class="p-4">
+            <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">News Flash</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Blog Landing
+              Page</a>
+            <p class="text-xs mt-2 text-slate-500">HTML, CSS </p>
+            <div class="flex mt-5 justify-between">
+              <button class="bg-black text-white rounded px-2 py1"><a
+                  href="https://github.com/Dammymure/NewsFlashBlog">github</a> </button>
+              <button class=" bg-[#32f520] text-white rounded px-4 py-2"><a
+                  href="https://news-flash-blog.vercel.app/">Live &#x279C;</a> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden ">
+        <div class="">
+          <img class="h-48 w-full object-cover " src="images/StudentPortalIMG.PNG" alt="Modern building architecture">
+        </div>
+        <div class="p-4">
+          <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Student Portal</div>
+          <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Student Study
+            Portal with Dashboards</a>
+          <p class="text-xs mt-2 text-slate-500">HTML, CSS, Tailwind, React</p>
+          <div class="flex mt-5 justify-between">
+            <button class="bg-black text-white rounded px-2 py1"><a
+                href="https://github.com/Dammymure/School_Portal">github</a> </button>
+            <button class=" bg-[#32f520] text-white rounded px-4 py-2"><a
+                href="https://school-portal-mu.vercel.app">Live &#x279C;</a> </button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden ">
+                <div class="">
+                  <img class="h-48 w-full object-cover " src="images/Dashboard.PNG" alt="Modern building architecture">
+                </div>
+                <div class="p-4">
+                  <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Sports Dashboard</div>
+                  <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Live score and match analysis dashboard</a>
+                  <p class="text-xs mt-2 text-slate-500">React, HTML, CSS, Tailwind </p>
+                  <div class="flex mt-5 justify-between">
+                    <button class="bg-black text-white rounded px-2 py1"><a href="https://github.com/Dammymure/SportDashboard">github</a> </button>
+                    <button class=" bg-[#32f520] text-white rounded px-4 py-2"><a href="https://sport-dashboard-kohl.vercel.app/">Live &#x279C;</a> </button>
+                  </div>
+                </div>
+      </div> -->
+      <!-- <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden ">
+        <div class="">
+          <div class="">
+            <img class="h-48 w-full object-cover " src="images/image1.jpg"
+              alt="Modern building architecture">
+          </div>
+          <div class="p-4">
+            <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Company retreats</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible
+              accommodation for your team</a>
+            <p class="text-xs mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some
+              sunshine? We have a list of places to do just that.</p>
+            <div class="flex mt-5 justify-between">
+              <button class="bg-black text-white rounded px-2 py1"><a href="#">github</a> </button>
+              <button class="bg-[#32f520] text-white rounded px-4 py-2"><a href="#">Website &#x279C;</a> </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="profile max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden ">
+        <div class="">
+          <div class="">
+            <img class="h-48 w-full object-cover " src="images/image1.jpg"
+              alt="Modern building architecture">
+          </div>
+          <div class="p-4">
+            <div class="uppercase tracking-wide text-sm text-[#32f520] font-semibold">Company retreats</div>
+            <a href="#" class="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible
+              accommodation for your team</a>
+            <p class="text-xs mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some
+              sunshine? We have a list of places to do just that.</p>
+            <div class="flex mt-5 justify-between">
+              <button class="bg-black text-white rounded px-2 py1"><a href="#">github</a> </button>
+              <button class="bg-[#32f520] text-white rounded px-4 py-2"><a href="#">Website &#x279C;</a> </button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+    <section class="bg-[#32f520] py-10 ">
+      <div class="text-center text-xl font-semibold flex flex-col">
+        <a href="#">famurewadamilola1@gmail.com</a>
+        <a href="https://drive.google.com/file/d/1Srt5rMBlxSNTtrPvDHorxpuCSLwbbUNR/view?usp=drivesdk"
+          target="_blank">Resume</a>
+
+        <h2>2023</h2>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e) {
+      navLinks.classList.toggle('top-[9%]')
+      e.name = e.name === 'menu' ? 'close' : 'menu'
+    }
+    // Movement
+    const image = document.getElementsByClassName('profile');
+    new simpleParallax(image, { overflow: true });
+
+    // Movement
+    const right = document.getElementsByClassName('right-mov');
+    new simpleParallax(right, {
+      orientation: 'right'
+    });
+
+
+
+  </script>
+  <script src="Index.js"></script>
+</body>
+
 </html>
